@@ -411,6 +411,25 @@ function initAnimations() {
 
 // Initialize when DOM is ready and GSAP is loaded
 document.addEventListener("DOMContentLoaded", function () {
+    // 0. Desktop Warning Injection
+    const injectDesktopWarning = () => {
+        if (!document.querySelector('.desktop-warning')) {
+            const warningHTML = `
+                <div class="desktop-warning">
+                    <div class="warning-content">
+                        <i class="fa-solid fa-desktop"></i>
+                        <div class="line"></div>
+                        <h1>DESKTOP ONLY</h1>
+                        <p>For the best experience and to access all academic features, please use a desktop or laptop computer.</p>
+                        <p style="font-size: 14px; opacity: 0.5;">Academic Avengers System</p>
+                    </div>
+                </div>
+            `;
+            document.body.insertAdjacentHTML('afterbegin', warningHTML);
+        }
+    };
+    injectDesktopWarning();
+
     console.log("Stats JS Loaded"); // Debug
     if (typeof gsap !== "undefined" && typeof ScrollTrigger !== "undefined") {
         initAnimations();

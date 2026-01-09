@@ -1247,13 +1247,7 @@ body.hovered #custom-cursor {
     transform: translate(-50%, -50%) scale(1.5);
 }
 
-body.hovered #custom-cursor::before {
-    /* border-bottom-color: var(--accent-color); REMOVED to maintain visibility */
-}
 
-body.hovered #custom-cursor::after {
-    /* background-color: var(--accent-color); REMOVED to maintain visibility */
-}
 
 /* --- Hero Canvas (Particles) --- */
 #hero-canvas {
@@ -1358,4 +1352,100 @@ body.hovered #custom-cursor::after {
     height: 100%;
     background: #fff;
     transition: width 0.1s linear;
+}
+
+/* --- Desktop Only Warning --- */
+.desktop-warning {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 99999;
+    color: #fff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
+
+.desktop-warning .warning-content {
+    max-width: 400px;
+    animation: fadeInScale 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.desktop-warning i {
+    font-size: 80px;
+    margin-bottom: 30px;
+    color: #fff;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    animation: pulseIcon 2s infinite ease-in-out;
+}
+
+.desktop-warning h1 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    font-family: var(--font-heading);
+    letter-spacing: 2px;
+}
+
+.desktop-warning p {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.desktop-warning .line {
+    width: 50px;
+    height: 4px;
+    background: #fff;
+    margin: 0 auto 30px;
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.9) translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+@keyframes pulseIcon {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+}
+
+@media (max-width: 1024px) {
+    .desktop-warning {
+        display: flex;
+    }
+
+    body {
+        overflow: hidden !important;
+    }
+
+    /* Hide everything else */
+    body>*:not(.desktop-warning):not(script):not(link) {
+        display: none !important;
+    }
 }
