@@ -1,0 +1,69 @@
+/* Service Page Styles - Modern B&W Theme */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 2em;
+  width: 100%;
+}
+
+.main h1 {
+  margin-bottom: 60px;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-primary);
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+}
+
+.service {
+  background-color: var(--bg-primary);
+  padding: 40px;
+  width: 350px;
+  border: 1px solid var(--border-color);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.service:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent-color);
+}
+
+.service h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: var(--text-primary);
+}
+
+.service p {
+  margin-bottom: 30px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.read-more {
+  display: inline-block;
+  background-color: transparent;
+  color: var(--text-primary);
+  padding: 10px 25px;
+  border: 1px solid var(--text-primary);
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.read-more:hover {
+  background-color: var(--accent-color);
+  color: var(--text-inverse);
+  border-color: var(--accent-color);
+}

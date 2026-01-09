@@ -1,0 +1,104 @@
+/* Contact Us Page Styles - Modern B&W Theme */
+
+body {
+    background: var(--bg-primary);
+}
+
+.two-dir {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 80vh;
+    padding: 5%;
+}
+
+.left1 {
+    flex: 1;
+    padding-top: 50px;
+    padding-right: 50px;
+    min-width: 300px;
+}
+
+.left1 h1 {
+    text-transform: uppercase;
+    font-size: 48px;
+    font-family: var(--font-heading);
+    line-height: 1.1;
+    letter-spacing: -2px;
+    color: var(--text-primary);
+}
+
+.left1 h1 span {
+    color: var(--text-secondary);
+}
+
+.right1 {
+    flex: 1;
+    min-width: 300px;
+    padding-top: 50px;
+}
+
+.right1 h1 {
+    padding-bottom: 30px;
+    font-size: 36px;
+    font-family: var(--font-heading);
+    color: var(--text-primary);
+    text-transform: uppercase;
+}
+
+/* Contact Form Styles */
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+}
+
+.input-group {
+    margin-bottom: 25px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 18px;
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    font-family: var(--font-main);
+    font-size: 16px;
+    transition: all 0.3s ease;
+    border-radius: 0;
+    /* Sharp edges for modern look */
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: var(--text-secondary);
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--text-primary);
+    background: var(--bg-secondary);
+    box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.submit-btn {
+    background-color: var(--text-primary);
+    color: var(--text-inverse);
+    border: none;
+    padding: 16px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: inline-block;
+}
+
+.submit-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: var(--accent-color);
+}

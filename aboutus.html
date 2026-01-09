@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Academic Avenger</title>
+  <link rel="stylesheet" href="css/aboutus.css">
+  <link rel="stylesheet" href="css/style.css?v=10">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preloader-spotlight"></div>
+    <div class="counter-wrap">
+      <span id="counter">0</span><span class="percent">%</span>
+    </div>
+    <div class="loading-text">LOADING SYSTEM</div>
+    <div class="loading-bar-container">
+      <div class="loading-bar"></div>
+    </div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div id="custom-cursor"></div>
+
+  <!-- Background Canvas -->
+  <canvas id="hero-canvas"></canvas>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/Black and Red Simple Business Company Logo.png" alt="Academic Avengers" />
+      </a>
+    </div>
+    <div class="links">
+      <a href="index.html">Home</a>
+      <a href="aboutus.html" class="active">About Us</a>
+      <a href="service.html">Services</a>
+      <a href="contactus.html">Contact Us</a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="main-block bigContainer">
+    <div class="main-block Container bottomContainer">
+      <div class="allText bottomText">
+        <p class="text-blk headingText">
+          Who We Are
+        </p>
+        <p class="text-blk subHeadingText">
+          Your Ultimate Assignment Rescue Team!
+        </p>
+        <p class="text-blk description">
+          We specialize in providing top-notch assignment writing services for students across India and around the
+          globe. Our mission is to empower students by delivering high-quality, customized academic content that meets
+          their unique needs and educational goals. <br><br>
+          Whether you're juggling multiple deadlines or facing challenging subjects, our team of expert writers is here
+          to help. We cater to a wide range of academic levels and disciplines, ensuring that every assignment is
+          meticulously researched, well-structured, and plagiarism-free.
+        </p>
+        <a href="service.html">
+          <button class="explore">
+            Explore our services
+          </button>
+        </a>
+      </div>
+      <div class="imgContainer">
+        <img src="images/Good-Assignment.jpg" class="mainVideo" alt="Our Team">
+        <!-- Decoration Dot Pattern -->
+        <img class="dotsImg image-block" src="images/bg.svg" alt="">
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer (Premium Grid Layout) -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="row">
+        <div class="img-footer">
+          <img src="images/Black and Red Simple Business Company Logo.png" alt="Academic Avengers Logo" />
+          <p>
+            "Academic Avengers" is here to rescue you! <br>
+            We specialize in crafting high-quality assignments and dissertations tailored to your needs.
+          </p>
+          <div class="copyright-text">
+            <i class="fa-regular fa-copyright"></i>
+            <span>2024 Academic Avengers. All Rights Reserved.</span>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="service.html">Our Services</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="service.html">Assignment Support</a></li>
+            <li><a href="service.html">Dissertation Support</a></li>
+            <li><a href="service.html">Part-time Job Assistance</a></li>
+            <li><a href="service.html">Brand Content Writing</a></li>
+            <li><a href="service.html">Resume/CVs</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Stay Updated</h4>
+          <p class="newsletter-text">Get the latest academic tips & offers.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault()">
+            <input type="email" class="newsletter-input" placeholder="Your email address" required>
+            <button type="submit" class="newsletter-btn">Join</button>
+          </form>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/academic__avengers?igsh=MXkxemozbnA1enNmNA==" target="_blank"
+              aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/academic-avengers/" target="_blank" aria-label="LinkedIn"><i
+                class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/script.js?v=3"></script>
+</body>
+
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Academic Avengers - Our Services</title>
+  <link rel="stylesheet" href="css/service.css">
+  <link rel="stylesheet" href="css/style.css?v=10">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preloader-spotlight"></div>
+    <div class="counter-wrap">
+      <span id="counter">0</span><span class="percent">%</span>
+    </div>
+    <div class="loading-text">LOADING SERVICES</div>
+    <div class="loading-bar-container">
+      <div class="loading-bar"></div>
+    </div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div id="custom-cursor"></div>
+
+  <!-- Background Canvas -->
+  <canvas id="hero-canvas"></canvas>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/Black and Red Simple Business Company Logo.png" alt="Academic Avengers Logo" />
+      </a>
+    </div>
+    <div class="links">
+      <a href="index.html">Home</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="service.html" class="active">Services</a>
+      <a href="contactus.html">Contact Us</a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main">
+    <header class="service-header" style="text-align: center; margin-bottom: 60px; position: relative; z-index: 2;">
+      <h1 class="features-header h2" style="font-size:clamp(40px, 5vw, 60px);">World-Class Services</h1>
+      <p style="color:var(--text-secondary); font-size: 18px; max-width: 600px; margin: 0 auto;">
+        Comprehensive academic solutions tailored to elevate your grades and secure your future.
+      </p>
+    </header>
+
+    <div class="features-grid" id="service-grid">
+      <!-- Service 1 -->
+      <div class="feature-box service-box-anim">
+        <div class="feature-icon">
+          <i class="fa-solid fa-pen-nib"></i>
+        </div>
+        <h3>Assignment Support</h3>
+        <p>Expert assistance with all types of university assignments. We ensure high-distinction quality tailored to
+          your rubric.</p>
+        <a href="contactus.html" class="call-now"
+          style="padding: 10px 30px; margin-top: auto; font-size: 14px;">Inquire</a>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="feature-box service-box-anim">
+        <div class="feature-icon">
+          <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+        <h3>Dissertation Support</h3>
+        <p>End-to-end dissertation guidance. From topic selection to final proofreading, we help you master your degree.
+        </p>
+        <a href="contactus.html" class="call-now"
+          style="padding: 10px 30px; margin-top: auto; font-size: 14px;">Inquire</a>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="feature-box service-box-anim">
+        <div class="feature-icon">
+          <i class="fa-solid fa-briefcase"></i>
+        </div>
+        <h3>Part-time Job Assistance</h3>
+        <p>Struggling to find work? We guide you through job hunting, interview prep, and landing the perfect student
+          job.</p>
+        <a href="contactus.html" class="call-now"
+          style="padding: 10px 30px; margin-top: auto; font-size: 14px;">Inquire</a>
+      </div>
+
+      <!-- Service 4 -->
+      <div class="feature-box service-box-anim">
+        <div class="feature-icon">
+          <i class="fa-solid fa-feather-pointed"></i>
+        </div>
+        <h3>Brand Content Writing</h3>
+        <p>Professional copywriting for businesses. SEO-optimized blogs, website copy, and marketing materials that
+          convert.</p>
+        <a href="contactus.html" class="call-now"
+          style="padding: 10px 30px; margin-top: auto; font-size: 14px;">Inquire</a>
+      </div>
+
+      <!-- Service 5 -->
+      <div class="feature-box service-box-anim">
+        <div class="feature-icon">
+          <i class="fa-solid fa-magnifying-glass-chart"></i>
+        </div>
+        <h3>Analytical Services</h3>
+        <p>Data analysis and management reporting. We turn complex data into clear, actionable insights for your
+          projects.
+        </p>
+        <a href="contactus.html" class="call-now"
+          style="padding: 10px 30px; margin-top: auto; font-size: 14px;">Inquire</a>
+      </div>
+
+      <!-- Service 6 -->
+      <div class="feature-box service-box-anim">
+        <div class="feature-icon">
+          <i class="fa-solid fa-file-invoice"></i>
+        </div>
+        <h3>Resume/CVs</h3>
+        <p>Stand out from the crowd with a professionally designed resume/CV and cover letter optimized for ATS systems.
+        </p>
+        <a href="contactus.html" class="call-now"
+          style="padding: 10px 30px; margin-top: auto; font-size: 14px;">Inquire</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer (Premium Grid Layout) -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="row">
+        <div class="img-footer">
+          <img src="images/Black and Red Simple Business Company Logo.png" alt="Academic Avengers Logo" />
+          <p>
+            "Academic Avengers" is here to rescue you! <br>
+            We specialize in crafting high-quality assignments and dissertations tailored to your needs.
+          </p>
+          <div class="copyright-text">
+            <i class="fa-regular fa-copyright"></i>
+            <span>2024 Academic Avengers. All Rights Reserved.</span>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="service.html">Our Services</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="service.html">Assignment Support</a></li>
+            <li><a href="service.html">Dissertation Support</a></li>
+            <li><a href="service.html">Part-time Job Assistance</a></li>
+            <li><a href="service.html">Brand Content Writing</a></li>
+            <li><a href="service.html">Resume/CVs</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Stay Updated</h4>
+          <p class="newsletter-text">Get the latest academic tips & offers.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault()">
+            <input type="email" class="newsletter-input" placeholder="Your email address" required>
+            <button type="submit" class="newsletter-btn">Join</button>
+          </form>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/academic__avengers?igsh=MXkxemozbnA1enNmNA==" target="_blank"
+              aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/academic-avengers/" target="_blank" aria-label="LinkedIn"><i
+                class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/script.js?v=3"></script>
+</body>
+
+</html>
